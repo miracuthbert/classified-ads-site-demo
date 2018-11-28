@@ -12,7 +12,9 @@
                     <div class="panel-body">
                         <nav class="nav nav-stacked">
                             <li>
-                                <a href="">Email to a friend</a>
+                                <a href="{{ route('listings.share.index', [$area, $listing]) }}">
+                                    Email to a friend
+                                </a>
                             </li>
                             @if(!$listing->favouritedBy(Auth::user()))
                                 <li>
@@ -72,7 +74,7 @@
                                     <label for="message" class="control-label">Message</label>
                                     <textarea name="message" id="message" cols="30" rows="5"
                                               class="form-control tm_comment"
-                                              placeholder="Enter your message here"></textarea>
+                                              placeholder="Enter your message here">{{ old('message') }}</textarea>
 
                                     @if($errors->has('message'))
                                         <span class="help-block">
