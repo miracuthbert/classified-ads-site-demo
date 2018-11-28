@@ -58,7 +58,7 @@ Route::resource('messenger', 'Messenger\MessengerController');
 /**
  * Admin Group Routes
  */
-Route::group(['prefix' => '/admin', 'namespace' => 'Admin'], function () {
+Route::group(['prefix' => '/admin', 'namespace' => 'Admin', 'middleware' => ['admin']], function () {
 
     //Dashboard Route
     Route::get('/dashboard', 'DashboardController')->name('admin.dashboard');
