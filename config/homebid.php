@@ -2,6 +2,6 @@
 
 return [
     'defaults' => [
-        'area' => str_slug('World Wide'),
+        'area' => str_slug('Tanzania'),
     ],
 ];
