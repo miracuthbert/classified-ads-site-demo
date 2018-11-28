@@ -1,0 +1,1 @@
+@extends('admin.users.partials._base_listing')

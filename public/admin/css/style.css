@@ -1,0 +1,25 @@
+/* CUSTOM ADMIN STYLES */
+html,
+body, .view {
+    height: 100%;
+}
+
+#main-wrapper {
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Dropdown */
+.dropdown-toggle:after {
+    content: normal;
+}
+
+/* Nav */
+.nav {
+    display: block;
+}
+
+/* Buttons */
+.input-group-btn > .btn {
+    margin-bottom: 0;
+}

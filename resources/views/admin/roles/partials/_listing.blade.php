@@ -1,0 +1,1 @@
+@extends('admin.roles.partials._base_listing')
