@@ -206,6 +206,13 @@ Route::group(['prefix' => '/{area}'], function () {
          * Listing Routes
          */
         Route::group(['prefix' => '/{listing}'], function () {
+
+            /**
+             * Listing share routes
+             */
+            Route::get('/share', 'ListingShareController@index')->name('listings.share.index');
+            Route::post('/share', 'ListingShareController@store')->name('listings.share.store');
+
             //Listing Delete Route
             Route::delete('/delete', 'ListingDeleteController')->name('listings.delete');
             Route::put('/restore', 'ListingRestoreController')->name('listings.restore');
