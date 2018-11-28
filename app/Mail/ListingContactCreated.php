@@ -58,7 +58,7 @@ class ListingContactCreated extends Mailable
     {
         return $this->markdown('email.listing.contact.message')
             ->subject("{$this->sender->first_name} sent a message about {$this->listing->title}")
-            ->from('support@homebid.co', config('app.name'))
+            ->from('support@jangobid.com', config('app.name'))
             ->replyTo($this->sender->email);
     }
 }
