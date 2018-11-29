@@ -1,7 +1,7 @@
 @component('mail::message')
 Hi there,
 
-{{ $user->name }} has shared this listing _{{ $listing->title }}_ with you.
+{{ $sender->name }} has shared this listing _{{ $listing->title }}_ with you.
 
 @if($body)
 They sent this message along:
